@@ -27,32 +27,32 @@ Let's supose that you are the author of the svg file. Do not forget to install p
      svg2po.sh SVG_FILE
 
    This will produce a file called a SVG_FILE.po (same folder of the original file). This file contains all the strings from the text boxes in your SVG_FILE in a format like this:
-
-msgid "Original text string 1"
-msgstr "-"
-
-msgid "Original text string 2"
-msgstr "-"
-
-msgid "Original text string 3"
-msgstr "-"
-...
+    
+    msgid "Original text string 1"
+    msgstr "-"
+    
+    msgid "Original text string 2"
+    msgstr "-"
+    
+    msgid "Original text string 3"
+    msgstr "-"
+    ...
 
   3. Send your translator the bitmap version of your SVG_FILE along with SVG_FILE.po
 
   4. Looking at the bitmap, the translator will be able to edit the SVG_FILE.po with any text editor. Other .po translation tools may be used (for example Virtaal) althoug some of them break the appropriate format of the file. An ordinay plain text editor will do the job.
 
   5. The translator just needs to send you back the SVG_FILE.po that must include all the translations. A translated file will look like this:
-
-msgid "Original text string 1"
-msgstr "Translated text string 1"
-
-msgid "Original text string 2"
-msgstr "Translated text string 2"
-
-msgid "Original text string 3"
-msgstr "Translated text string 3"
-...
+    
+    msgid "Original text string 1"
+    msgstr "Translated text string 1"
+    
+    msgid "Original text string 2"
+    msgstr "Translated text string 2"
+    
+    msgid "Original text string 3"
+    msgstr "Translated text string 3"
+    ...
 
   6. Time to start the second set of gears of the mill:
      po2svg.sh SVG_FILE
