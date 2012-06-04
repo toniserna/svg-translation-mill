@@ -14,9 +14,22 @@ Without any help the process will be necessarily done from an svg editor like In
 This scenario worsens significantly if you are going to manage multiple translated versions of a graphic and need to contact a translator in order to get the job done. First of all you will need that the translator has an svg-compatible editor installed, then he or she must know the basics of editing vector graphics with such tool and besides you will probably have to check the final appearance of the graphic because the translator may have altered its layout.
 
 The proposed solution
---------------------
+---------------------
 
 Svg-translation-mill is a set of two bash scripts (svg2po.sh & po2svg.sh) that allow automatically generate a "po-like" file from a .svg, translate that file with a plain text editor and finally merge it back also automatically generating a new translated version of the original svg.
+
+Installation
+------------
+  # You'll need pcregrep, a multiline capable grep-like command
+  sudo apt-get install pcregrep
+
+  # Change wit cd to your preferred folder and download there svg2po.sh and po2svg.sh
+  wget https://github.com/toniserna/svg-translation-mill/blob/master/po2svg.sh https://github.com/toniserna/svg-translation-mill/blob/master/svg2po.sh
+
+  # Mark these scripts as executable
+  chmod a+x svg2po.sh po2svg.sh
+
+  # Work as described in the next section of this README
 
 The new workflow
 ----------------
@@ -25,9 +38,9 @@ Let's supose that you are the author of the svg file. Do not forget to install p
 
   1.  You will compose your graphic (let's name it SVG_FILE) using Inkscape or any other editor.  If any translation is needed, it includes different texts in your language of reference. If you are interested in facilitating contacting different translators consider to develop it at least an English version. When designing, keep texts as texts, do not convert them into paths or curves. It may be also interesting to export a bitmap version (.png, .jpg, .tiff etc.) of your SVG_FILE.
 
-  2. From the command line launch the first script from this mill:
+  2. From the command line and in the same folder wher you downloaded the two scripts, launch the first part of this mill:
 
-     svg2po.sh SVG_FILE
+     ./svg2po.sh SVG_FILE
 
    This will produce a file called a SVG_FILE.po (same folder of the original file). This file contains all the strings from the text boxes in your SVG_FILE in a format like this:
 
@@ -71,7 +84,7 @@ Let's supose that you are the author of the svg file. Do not forget to install p
 
   6. Time to start the second set of gears of this mill:
 
-     po2svg.sh SVG_FILE
+     ./po2svg.sh SVG_FILE
 
      After that you will get a file called SVG_FILE_translated.svg in the same folder of the original one.
 
