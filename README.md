@@ -31,13 +31,17 @@ Let's supose that you are the author of the svg file. Do not forget to install p
    This will produce a file called a SVG_FILE.po (same folder of the original file). This file contains all the strings from the text boxes in your SVG_FILE in a format like this:
 
 	msgid "Original text string 1"
+
 	msgstr "-"
 
 	msgid "Original text string 2"
+
 	msgstr "-"
 
 	msgid "Original text string 3"
+
 	msgstr "-"
+
 	...
 
   3. Send your translator the bitmap version of your SVG_FILE along with SVG_FILE.po
@@ -47,13 +51,17 @@ Let's supose that you are the author of the svg file. Do not forget to install p
   5. The translator just needs to send you back the SVG_FILE.po that must include all the translations. A translated file will look like this:
 
 	msgid "Original text string 1"
+
 	msgstr "Translated text string 1"
 
 	msgid "Original text string 2"
+
 	msgstr "Translated text string 2"
 
 	msgid "Original text string 3"
+
 	msgstr "Translated text string 3"
+
 	...
 
   6. Time to start the second set of gears of the mill:
@@ -75,7 +83,7 @@ Known limitations
 -----------------
  * When using multiline text boxes, the first line of every text box in the graphic should be unique, as it is going to double as message identifier. In fact they do not only need to be unique, if one of the firsts strings of any text block is included as a starting substring of the first line of another text box, the po2svg.sh script won't be able to integrate the translations properly.
 
-As an example of a problematic situation, imagine that in your sv you have a text box with the following two lines:
+As an example of a problematic situation, imagine that in your svg you have a text box with the following two lines:
 
      NO
     ENTRY
