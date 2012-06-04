@@ -5,3 +5,4 @@ Changelog
     - Several improvements made at README.md
 * 2012-06-04
     - TO_DO.md & this CHANGELOG.md added
+    - Several improvements made at README.md and TO_DO.md
