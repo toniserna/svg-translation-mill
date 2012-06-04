@@ -9,7 +9,7 @@
 #
 # Version/Date(YYYY-MM-DD): 1.0/2012-06-03
 #
-# Dependencies: pcregrep
+# Dependencies: pcregrep, po2svg.sh
 #
 # Recommended: inkscape
 #
@@ -83,13 +83,15 @@ NumMSGSTR=`grep -c '^msgstr \"..\+\"' "$SVG_FILE".po`
 if [ $NumMSGSTR -eq $NumMSGID ]
 then
     clear
-    echo -en "Finished translation?\n(If finished the new texts will be integrated in a new SVG file)\n[y/n] ">&2
+    echo -en "Finished translating?\n(If finished the new texts will be integrated in a new SVG file)\n[y/n] ">&2
     read -n1 ANSWER
     echo
 
     if [ $ANSWER == 'y' -o $ANSWER == 'Y' ]
     then
-        po2svg.sh "$SVG_FILE"
+        #If svg-translation-mill is installed in a directory in the PATH,
+        #the following call must not be preceeded by ./
+        ./po2svg.sh "$SVG_FILE"
     else
         echo -e "When translation is ready remember to execute:\n    po2svg.sh $SVG_FILE" >&2
         exit 0
