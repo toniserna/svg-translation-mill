@@ -87,7 +87,7 @@ Drawing for translation hints
 
 Known limitations
 -----------------
- * When using multiline text boxes, the first line of every text box in the graphic should be unique, as it is going to double as message identifier. In fact they do not only need to be unique, if one of the firsts strings of any text block is included as a starting substring of the first line of another text box, the po2svg.sh script won't be able to integrate the translations properly.
+ * KL1: When using multiline text boxes, the first line of every text box in the graphic should be unique, as it is going to double as message identifier. In fact they do not only need to be unique, if one of the firsts strings of any text block is included as a starting substring of the first line of another text box, the po2svg.sh script won't be able to integrate the translations properly.
 
 As an example of a problematic situation, imagine that in your svg you have a text box with the following two lines:
 
