@@ -21,13 +21,16 @@ Svg-translation-mill is a set of two bash scripts (svg2po.sh & po2svg.sh) that a
 Installation
 ------------
   # You'll need pcregrep, a multiline capable grep-like command
-  sudo apt-get install pcregrep
+  
+sudo apt-get install pcregrep
 
   # Change wit cd to your preferred folder and download there svg2po.sh and po2svg.sh
-  wget https://github.com/toniserna/svg-translation-mill/blob/master/po2svg.sh https://github.com/toniserna/svg-translation-mill/blob/master/svg2po.sh
+  
+wget https://github.com/toniserna/svg-translation-mill/blob/master/po2svg.sh https://github.com/toniserna/svg-translation-mill/blob/master/svg2po.sh
 
   # Mark these scripts as executable
-  chmod a+x svg2po.sh po2svg.sh
+  
+chmod a+x svg2po.sh po2svg.sh
 
   # Work as described in the next section of this README
 
