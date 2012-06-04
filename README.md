@@ -24,7 +24,7 @@ Installation
   
 sudo apt-get install pcregrep
 
-  # Change wit cd to your preferred folder and download there svg2po.sh and po2svg.sh
+  # Change with cd to your preferred folder and download there svg2po.sh and po2svg.sh
   
 wget https://github.com/toniserna/svg-translation-mill/blob/master/po2svg.sh https://github.com/toniserna/svg-translation-mill/blob/master/svg2po.sh
 
