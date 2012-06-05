@@ -37,7 +37,7 @@ chmod a+x svg2po.sh po2svg.sh
 The new workflow
 ----------------
 
-Let's supose that you are the author of the svg file. Do not forget to install pcregrep (a multiline-enabled grep-like command): sudo apt-get install pcregrep (in GNU-Linux systems with the debian packaging system).
+Let's supose that you are the author of the svg file.
 
   1.  You will compose your graphic (let's name it SVG_FILE) using Inkscape or any other editor.  If any translation is needed, it includes different texts in your language of reference. If you are interested in facilitating contacting different translators consider to develop it at least an English version. When designing, keep texts as texts, do not convert them into paths or curves. It may be also interesting to export a bitmap version (.png, .jpg, .tiff etc.) of your SVG_FILE.
 
