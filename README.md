@@ -1,8 +1,12 @@
 SVG-TRANSLATION-MILL
 --------------------
+Licensed under: GPLv3
+
 by Toni Serna <serna.toni@gmail.com>
 
-Licensed under: GPLv3
+Twitter: @toniserna
+
+More info (SPANISH): http://cos.as/35l
 
 The scenario
 ------------
